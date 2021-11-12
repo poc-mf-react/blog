@@ -1,22 +1,39 @@
 import * as React from 'react';
 
-const Sofa = ({ ...props }: React.SVGProps<SVGSVGElement>): JSX.Element => {
-  return (
-    <svg
-      width={32}
-      height={32}
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
-      <path
-        d="M24 18.67H8v-3.334a2 2 0 00-2-2H4.667a2 2 0 00-2 2v6a2.667 2.667 0 002.666 2.667h21.334a2.667 2.667 0 002.666-2.667v-6a2 2 0 00-2-2H26a2 2 0 00-2 2v3.333zM6.667 24v2.667M25.334 24v2.667M5.333 13.335v-2.667a4 4 0 014-4h13.334a4 4 0 014 4v2.667"
-        stroke="#1F2D27"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-};
+const Sofa = ({ ...props }: React.HTMLAttributes<SVGElement>): JSX.Element => (
+  <svg
+    width="32"
+    height="32"
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M23.9998 18.6666H7.99984V15.3333C7.99984 14.8028 7.78912 14.2941 7.41405 13.919C7.03898 13.544 6.53027 13.3333 5.99984 13.3333H4.6665C4.13607 13.3333 3.62736 13.544 3.25229 13.919C2.87722 14.2941 2.6665 14.8028 2.6665 15.3333V21.3333C2.6665 22.0405 2.94746 22.7188 3.44755 23.2189C3.94765 23.719 4.62593 23.9999 5.33317 23.9999H26.6665C27.3737 23.9999 28.052 23.719 28.5521 23.2189C29.0522 22.7188 29.3332 22.0405 29.3332 21.3333V15.3333C29.3332 14.8028 29.1225 14.2941 28.7474 13.919C28.3723 13.544 27.8636 13.3333 27.3332 13.3333H25.9998C25.4694 13.3333 24.9607 13.544 24.5856 13.919C24.2106 14.2941 23.9998 14.8028 23.9998 15.3333V18.6666Z"
+      stroke="#1F2D27"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M6.6665 24V26.6667"
+      stroke="#1F2D27"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M25.333 24V26.6667"
+      stroke="#1F2D27"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M5.33301 13.3333V10.6666C5.33301 9.60576 5.75444 8.58834 6.50458 7.8382C7.25473 7.08805 8.27214 6.66663 9.33301 6.66663H22.6663C23.7272 6.66663 24.7446 7.08805 25.4948 7.8382C26.2449 8.58834 26.6663 9.60576 26.6663 10.6666V13.3333"
+      stroke="#1F2D27"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
 
 export { Sofa };
